@@ -8,7 +8,7 @@
         <meta name="author" content="Måns Magnusson">
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Build References - genmod docs</title>
+        <title>Score variants - genmod docs</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -39,7 +39,7 @@
                             <li class="navitem">
                                 <a href="../../genetic-models/" class="nav-link">Genetic Models</a>
                             </li>
-                            <li class="dropdown active">
+                            <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Commands <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
@@ -60,7 +60,7 @@
 </li>
                                     
 <li>
-    <a href="./" class="dropdown-item active">Build References</a>
+    <a href="../build-annotation/" class="dropdown-item">Build References</a>
 </li>
                                 </ul>
                             </li>
@@ -73,17 +73,7 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../sort-variants/" class="nav-link">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a rel="next" class="nav-link disabled">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="https://github.com/moonso/genmod/edit/master/docs/commands/build-annotation.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                                <a href="https://github.com/moonso/genmod/edit/master/docs/commands/score-variants.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
                             </li>
                     </ul>
                 </div>
@@ -102,47 +92,12 @@
     
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
-            
-            <li class="nav-item" data-level="1"><a href="#build-new-annotations-with-genmod" class="nav-link">Build new annotations with genmod</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#basic-command" class="nav-link">Basic command</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#overview" class="nav-link">Overview</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-              </ul>
-            </li>
         </ul>
     </div>
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="build-new-annotations-with-genmod">Build new annotations with genmod</h1>
-<h2 id="basic-command">Basic command</h2>
-<pre><code class="language-bash">$ genmod build --help
-Usage: genmod build [OPTIONS] ANNOTATION_FILE
-
-  Build a new annotation database
-
-  Build an annotation database from an annotation file.
-
-Options:
-  -o, --outdir PATH               Specify the path to a folder where the
-                                  annotation files should be stored.
-  -t, --annotation_type [bed|ccds|gtf|gene_pred|gff]
-                                  Specify the format of the annotation file.
-  --splice_padding INTEGER        Specify the the number of bases that the
-                                  exons should be padded with. Default is 2
-                                  bases.
-  -v, --verbose                   Increase output verbosity.
-  --help                          Show this message and exit.
-</code></pre>
-<h2 id="overview">Overview</h2>
-<p>The build command is used for building new annotations. This could be used if another gene defenition than default (refSeq) are preferred, if other regions than genes should be used to annotate compounds or if another organism than humans are used in the analysis.
-The supported formats are <code>bed, ccds, gtf, gene_pred, gff</code>. Small examples for the supported formats in <a href="https://github.com/moonso/genmod/blob/master/tests/conftest.py">conftest.py</a></p></div>
+</div>
             </div>
         </div>
 
